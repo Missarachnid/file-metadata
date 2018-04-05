@@ -11,8 +11,8 @@ app.get("/", function (req, res) {
  
 });
 
-app.post('/upload', (req, res) => {
-
+app.post('/upload', upload.single('uploadFile'), (req, res) => {
+  
 });
 
 // listen for requests :)
