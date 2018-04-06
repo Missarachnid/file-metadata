@@ -17,4 +17,4 @@ Melissa Kepler A.K.A. Missarachnid
 *  [Free Code Camp](https://www.freecodecamp.org)
 *  [Glitch](https://glitch.com/)
 *  [MLab](https://mlab.com/)
-### Project can be seen [here](https://kepler.glitch.me/)
+### Project can be seen [here](https://kepler.glitch.me/) - still a work in progress
