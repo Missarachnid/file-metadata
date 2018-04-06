@@ -1,6 +1,8 @@
 body {
     margin: 50px;
     padding-bottom: 96px;
+    height: 100%;
+    width: 100%;
 }
 
 .quote {
@@ -26,4 +28,9 @@ code {
     background-color:#00ccc9;
     font-size: 18px;
     margin: 5px;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
 }
