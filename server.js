@@ -1,9 +1,8 @@
 const express = require('express');
 const multer = require('multer');
-const mongoose = require('mongoose');
-
-var upload = multer({ dest: 'uploads/' });
-var app = express();
+const uploadfile = require('./models/fileSubmit');
+const upload = multer({ dest: 'uploads/' });
+const app = express();
 
 
 app.use(express.static('public'));
