@@ -9,9 +9,11 @@ const storage = multer.diskStorage({
     cb(null, file.fieldname + '-' + Date.now())
   }
 });
-
+const multerUpload = multer({
+  storage: storage
+});
  
-const upload = multer({ storage: storage })
+const uploadUserFile = multerUpload.single('fileSized');
 const app = express();
 
 
@@ -22,10 +24,14 @@ app.get("/", function (req, res) {
  
 });
 
-app.post('/upload', upload.single('uploadFile'), (req, res) => {
-  if(err){
-    res.send(err);
-  }
+app.post('/upload', (req, res) => {
+  uploadUserFile(req, res, (err) => {
+    if(err){
+      console.log(err);
+    }
+    
+    console.log(req);
+  });
 });
 
 // listen for requests :)
