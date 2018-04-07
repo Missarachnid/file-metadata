@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const uploadfile = require('./models/fileSubmit');
+const upload = multer();
 const app = express();
 
 
@@ -9,6 +9,10 @@ app.use(express.static('public'));
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/",  (req, res)  => {
  
+});
+
+app.post('/uploadFile', upload.single('userFile'), (req, res) => {
+  console.log(req.userFile);
 });
 
 
