@@ -10,11 +10,9 @@ Melissa Kepler A.K.A. Missarachnid
 *  CSS
 *  JavaScript/ Node.js
 *  Glitch
-*  Mongodb
-*  MLab
+*  Multer 
 
 ### Acknowledgements
 *  [Free Code Camp](https://www.freecodecamp.org)
 *  [Glitch](https://glitch.com/)
-*  [MLab](https://mlab.com/)
-### Project can be seen [here](https://kepler.glitch.me/) - still a work in progress
+### Project can be seen [here](https://kepler.glitch.me)
