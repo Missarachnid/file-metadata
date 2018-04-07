@@ -21,7 +21,7 @@
     "node",
     "glitch",
     "express",
-    "multer"
+    "multer",
     "Free Code Camp"
   ]
 }
