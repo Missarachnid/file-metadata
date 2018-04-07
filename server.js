@@ -12,7 +12,9 @@ app.get("/",  (req, res)  => {
 });
 
 app.post('/uploadFile', upload.single('userFile'), (req, res) => {
-  console.log(req.userFile);
+  if(req.file && req.file.size){
+  alert("Your file size is " + req.file.size);
+  }
 });
 
 
